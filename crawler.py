@@ -27,7 +27,7 @@ def loop(execute_second, market):
        'best_bid_size', 'best_ask_size', 'total_bid_depth', 'total_ask_depth',
        'ltp', 'volume', 'volume_by_product']
     index = 0
-    path = f'../data/bitflyer_{market}_{start_date}.csv'
+    path = f'./data/bitflyer_{market}_{start_date}.csv'
     df = pd.DataFrame({},index=[], columns=columns)
     df.to_csv(path, mode='w', header=True)
     while True:
