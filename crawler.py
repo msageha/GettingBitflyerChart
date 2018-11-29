@@ -49,5 +49,5 @@ if __name__ == '__main__':
     second = 0
     for market in markests:
         second += 10
-        thread = threading.Thread(target=loop, args=(second, market))
+        thread = threading.Thread(target=loop, args=('{0:02d}'.format(second), market))
         thread.start()
